@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { IoMenu } from "react-icons/io5";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Logo from "./Logo";
+import PrimaryButton from "./PrimaryButton";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -92,11 +93,7 @@ const Navbar = () => {
                 ))}
               </div>
               {/* appointment  */}
-              <Link className="mx-auto mb-10">
-                <Button className="bg-primaryTeal hover:bg-primaryDark focus:outline focus:outline-teal-400 transition-all ease-in">
-                  Make Appointment
-                </Button>
-              </Link>
+              <PrimaryButton path={"/"} title={"Make Appointment"} />
             </SheetContent>
           </Sheet>
         </div>
