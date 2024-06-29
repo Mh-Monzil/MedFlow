@@ -1,6 +1,9 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "../../public/hospi.png";
+
 import { Button } from "./ui/button";
+import { IoMenu } from "react-icons/io5";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -34,10 +37,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* logo  */}
 
-        <h1 className="flex items-center justify-center">
-          <img src={logo} className="w-12 h-12 md:w-16 md:h-16 rounded-full" alt="" />
-          <p className="font-bold text-2xl md:text-3xl">MedFlow</p>
-        </h1>
+        <Logo />
 
         {/* navList */}
         <div className="hidden md:flex gap-6">
@@ -67,9 +67,39 @@ const Navbar = () => {
           </Link>
         </div>
 
-
-        <p className="md:hidden">Menu</p>
-
+        <div className="flex md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <IoMenu className="text-3xl cursor-pointer" />
+            </SheetTrigger>
+            <SheetContent className="flex flex-col justify-between">
+              <Logo />
+              {/* route  */}
+              <div className="flex flex-col gap-5 ">
+                {navLinks.map((link) => (
+                  <Link
+                    href={`${link.path}`}
+                    key={link.name}
+                    className="mx-auto relative group font-semibold text-2xl"
+                  >
+                    {link.name}
+                    <span
+                      className={`h-[2px] inline-block bg-primary absolute left-0 -bottom-1 group-hover:w-full transition-all ease-in duration-300 ${
+                        pathname === link.path ? "w-full" : "w-0"
+                      }`}
+                    ></span>
+                  </Link>
+                ))}
+              </div>
+              {/* appointment  */}
+              <Link className="mx-auto mb-10">
+                <Button className="bg-primaryTeal hover:bg-primaryDark focus:outline focus:outline-teal-400 transition-all ease-in">
+                  Make Appointment
+                </Button>
+              </Link>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </div>
   );
