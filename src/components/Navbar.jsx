@@ -34,7 +34,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="py-2">
+    <div className="py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* logo  */}
 
