@@ -22,7 +22,7 @@ const Banner = () => {
 
       {/* right part banner  */}
       <div className="lg:w-1/2">
-        <img src={bannerImg} alt="" className="w-[800px]" />
+        <img src={bannerImg} alt="" className="w-[800px] rounded-3xl" />
       </div>
     </div>
   );
