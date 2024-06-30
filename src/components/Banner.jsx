@@ -1,12 +1,13 @@
 import PrimaryButton from "./PrimaryButton";
 import bannerImg from "../assets/images/hospi-banner.png";
+import mobileBanner from "../assets/images/hospi-banner-square.png";
 
 const Banner = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:h-[60vh] flex flex-col lg:flex-row justify-between items-center gap-6 pt-2 p-6">
+    <div className="max-w-7xl mx-auto lg:h-[60vh] flex flex-col-reverse lg:flex-row justify-between items-center gap-6 pt-2 md:p-6 text-center md:text-left pb-10">
       {/* left part banner  */}
       <div className="lg:w-1/2">
-        <h1 className="text-3xl md:text-5xl xl:text-6xl font-bold">
+        <h1 className="text-3xl sm:text-5xl md:text-5xl xl:text-6xl font-bold">
           We Are Providing Best & Affordable{" "}
           <span className="text-primaryTeal">Health Care.</span>{" "}
         </h1>
@@ -22,7 +23,8 @@ const Banner = () => {
 
       {/* right part banner  */}
       <div className="lg:w-1/2">
-        <img src={bannerImg} alt="" className="w-[800px] rounded-3xl" />
+        <img src={bannerImg} alt="" className="hidden lg:flex w-[800px] rounded-3xl" />
+        <img src={mobileBanner} alt="" className="md:hidden w-full rounded-3xl" />
       </div>
     </div>
   );
