@@ -61,11 +61,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link className="">
-            <Button className="bg-primaryTeal hover:bg-primaryDark focus:outline focus:outline-teal-400 transition-all ease-in">
-              Make Appointment
-            </Button>
-          </Link>
+          <PrimaryButton path={"/"} title={"Appointment"} />
         </div>
 
         <div className="flex md:hidden">
@@ -93,7 +89,7 @@ const Navbar = () => {
                 ))}
               </div>
               {/* appointment  */}
-              <PrimaryButton path={"/"} title={"Make Appointment"} />
+              <PrimaryButton path={"/"} title={"Appointment"} />
             </SheetContent>
           </Sheet>
         </div>

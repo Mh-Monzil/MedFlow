@@ -27,7 +27,7 @@ const BannerCard = () => {
     },
     
   ];
-  return <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-6">
+  return <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:px-6">
     {cards.map((card, idx) => {
         return <div key={idx} className="relative group p-6 border overflow-hidden rounded-md">
           <span className="w-0 h-full absolute left-0 top-0 bg-primaryTeal/30 -z-10 group-hover:w-full transition-all duration-700"></span>
