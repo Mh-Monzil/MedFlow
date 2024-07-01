@@ -22,8 +22,9 @@ const Banner = () => {
       </div>
 
       {/* right part banner  */}
-      <div className="lg:w-1/2">
+      <div className="lg:w-1/2 rounded-3xl relative overflow group">
         <img src={mobileBanner} alt="" className="lg w-full rounded-3xl" />
+        <span className="absolute w-0 h-full top-0 left-1/2 transform -translate-x-1/2 bg-white/5 group-hover:w-full transition-all ease-in-out duration-1000 "></span>
       </div>
     </div>
   );
