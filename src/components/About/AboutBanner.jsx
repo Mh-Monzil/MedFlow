@@ -8,7 +8,7 @@ const AboutBanner = () => {
       <div className="lg:w-1/2 order-2">
         
         <h1 className='uppercase font-bold mb-4 text-primaryDark'>Who we are</h1>
-        <h1 className="text-3xl sm:text-5xl md:text-5xl xl:text-6xl font-bold md:leading-3">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold ">
          Improving The Quality of Your Life Through {" "}
           <span className="text-primaryTeal">Better Health.</span>{" "}
         </h1>
