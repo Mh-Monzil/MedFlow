@@ -4,7 +4,7 @@ import mobileBanner from "../assets/images/hospi-banner-square.png";
 
 const Banner = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:h-[60vh] flex flex-col-reverse lg:flex-row justify-between items-center gap-6 pt-2 md:p-6 text-center md:text-left pb-10">
+    <div className="max-w-7xl mx-auto lg:h-[60vh] flex flex-col-reverse lg:flex-row justify-between items-center gap-10 pt-2 md:p-6 text-center md:text-left pb-10">
       {/* left part banner  */}
       <div className="lg:w-1/2">
         <h1 className="text-3xl sm:text-5xl md:text-5xl xl:text-6xl font-bold">
@@ -22,9 +22,9 @@ const Banner = () => {
       </div>
 
       {/* right part banner  */}
-      <div className="lg:w-1/2">
-        <img src={bannerImg} alt="" className="hidden lg:flex w-[800px] rounded-3xl" />
-        <img src={mobileBanner} alt="" className="md:hidden w-full rounded-3xl" />
+      <div className="lg:w-1/2 rounded-3xl relative overflow group">
+        <img src={mobileBanner} alt="" className="lg w-full rounded-3xl" />
+        <span className="absolute w-0 h-full top-0 left-1/2 transform -translate-x-1/2 bg-white/5 group-hover:w-full transition-all ease-in-out duration-1000 "></span>
       </div>
     </div>
   );
