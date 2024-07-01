@@ -49,7 +49,7 @@ const TopServices = () => {
 
 
     return (
-        <div className="">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
             <div className="px-4 md:px-6 text-left">
             <h2 className='uppercase font-bold mb-4 text-primaryDark'>Top Services</h2>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold ">
@@ -74,7 +74,7 @@ const TopServices = () => {
     <div className=" text-left">
             <h2 className='uppercase font-bold mb-4 text-primaryDark'>Caring for the health of you and your family</h2>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold ">
-          We Provide All Aspects of Medical Practice For Your Whole Family! 
+          We Provide All Aspects of Medical Practice <br /> For Your Whole Family! 
         </h1>
             </div>
 
@@ -108,9 +108,9 @@ const TopServices = () => {
 
               {/* Right Content */}
               <div className="lg:w-1/2">
-                <div className="grid grid-cols-1  gap-4  ">
+                <div className="grid grid-cols-1 gap-4  ">
                   {cardContent.map((content, idx)=>(
-                    <div className="border rounded-md px-2 py-4 md:px-6 md:py-8  " key={idx}>
+                    <div className="border rounded-md px-2 py-4 md:px-4 md:py-8  " key={idx}>
                       <div className="flex  gap-2 justify-center" >
                    <div>
             <span className=" text-6xl text-primaryTeal">{content.icon}</span>
