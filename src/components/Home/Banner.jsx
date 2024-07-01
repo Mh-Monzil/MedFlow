@@ -11,7 +11,7 @@ const Banner = () => {
           We Are Providing Best & Affordable{" "}
           <span className="text-primaryTeal">Health Care.</span>{" "}
         </h1>
-        <p className="text-lg font-medium pt-2 md:pt-4">
+        <p className="text-lg text-gray-600 font-medium pt-2 md:pt-4">
           Our is to deliver the highest quality healthcare services. We believe
           that everyone deserves access to excellent medical care without
           compromising on quality.
