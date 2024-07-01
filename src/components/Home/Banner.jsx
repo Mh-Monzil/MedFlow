@@ -1,5 +1,4 @@
 import PrimaryButton from "../Shared/PrimaryButton";
-import bannerImg from "../../assets/images/hospi-banner.png";
 import mobileBanner from "../../assets/images/hospi-banner-square.png";
 
 const Banner = () => {

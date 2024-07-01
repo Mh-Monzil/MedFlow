@@ -5,7 +5,7 @@ import Footer from "../components/Shared/Footer";
 const Root = () => {
   return (
     <div className="font-roboto">
-      <div className="px-4">
+      <div className="">
         <Navbar />
         <Outlet />
       </div>
