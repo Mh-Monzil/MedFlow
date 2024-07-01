@@ -16,10 +16,10 @@ const Welcome = () => {
         <p className="font-medium text-gray-600">
           Discover complete medical solutions at RiseAbove, your ultimate
           healthcare destination. We offer a wide range of services, from expert
-          consultations and advanced treatments to personalized care plans. Our
+          consultations and advanced treatments to personalized care plans.<span className="hidden lg:flex">Our
           dedicated team ensures seamless support and exceptional care, making
           your health and well-being our top priority. Experience excellence in
-          healthcare, all in one place.
+          healthcare, all in one place.</span>
         </p>
         <div className="pt-5">
           <PrimaryButton path="/about" title={"About Us"} />
@@ -27,9 +27,8 @@ const Welcome = () => {
       </div>
 
       {/* welcome right side image  */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 relative">
         <img src={welcomeImg1} alt="" className="rounded-xl" />
-        {/* <img src={welcomeImg2} alt="" /> */}
       </div>
     </div>
   );
