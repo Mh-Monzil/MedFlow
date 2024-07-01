@@ -1,5 +1,6 @@
-import Banner from "@/components/Banner";
-import BannerCard from "@/components/BannerCard";
+import Banner from "@/components/Home/Banner";
+import BannerCard from "@/components/Home/BannerCard";
+
 
 
 const Home = () => {
