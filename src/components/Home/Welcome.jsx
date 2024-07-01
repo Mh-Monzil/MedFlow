@@ -1,10 +1,9 @@
 import welcomeImg1 from "../../assets/images/welcome2.png";
-import welcomeImg2 from "../../assets/images/welcome1.png";
 import PrimaryButton from "../Shared/PrimaryButton";
 
 const Welcome = () => {
   return (
-    <div className="max-w-7xl mx-auto md:px-6 my-12 md:my-28 flex flex-col justify-center items-center md:flex-row-reverse gap-6 lg:gap-10">
+    <div className="max-w-7xl mx-auto px-4 md:px-6 mt-12 md:mt-28 flex flex-col justify-center items-center md:flex-row-reverse gap-6 lg:gap-10">
       {/* welcome left side content  */}
       <div className="md:w-1/2 text-center md:text-left space-y-1.5 lg:space-y-3">
         <p className="uppercase text-primaryTeal font-semibold">
