@@ -33,7 +33,7 @@ const BannerCard = () => {
           <span className="w-0 h-full absolute left-0 top-0 bg-primaryTeal/30 -z-10 group-hover:w-full transition-all duration-700"></span>
             <span className=" text-5xl text-primaryTeal">{card.icon}</span>
             <h4 className="text-xl font-medium pt-2 pb-1">{card.title}</h4>
-            <p>{card.des}</p>
+            <p className="text-gray-600">{card.des}</p>
         </div>
     })}
   </div>;
