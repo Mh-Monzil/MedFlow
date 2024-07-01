@@ -79,10 +79,10 @@ const TopServices = () => {
             </div>
 
             
-            <div className="flex gap-8 my-10">
+            <div className="flex flex-col md:flex-row gap-8 my-10">
 
               {/* left content */}
-              <div className="lg: w-1/2 py-4">
+              <div className="lg:w-1/2 py-4">
                 <h2 className="text-xl font-bold mb-10">Welcome to medflow, where we offer comprehensive medical care tailored to every member of your family. </h2>
 
                 <p className="mb-8">Our dedicated team of healthcare professionals is committed to providing you and your loved ones with personalized and compassionate healthcare services. We understand the importance of family health.  </p>
@@ -107,16 +107,16 @@ const TopServices = () => {
               </div>
 
               {/* Right Content */}
-              <div className="lg: w-1/2">
+              <div className="lg:w-1/2">
                 <div className="grid grid-cols-1  gap-4  ">
                   {cardContent.map((content, idx)=>(
-                    <div className="border rounded-md px-6 py-8  " key={idx}>
+                    <div className="border rounded-md px-2 py-4 md:px-6 md:py-8  " key={idx}>
                       <div className="flex  gap-2 justify-center" >
                    <div>
             <span className=" text-6xl text-primaryTeal">{content.icon}</span>
                     </div>  
             <div>
-            <h4 className="text-2xl font-medium pt-2 pb-1">{content.title}</h4>
+            <h4 className="md:text-2xl font-medium pt-2 pb-1">{content.title}</h4>
             <p className="text-gray-600">{content.des}</p>
             </div>
                     </div>
