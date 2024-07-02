@@ -1,39 +1,40 @@
 import { Link } from "react-router-dom";
-
+import { FaEye, FaStethoscope, FaFlask } from "react-icons/fa6";
+import { FaMicroscope, FaTooth } from "react-icons/fa";
 
 const MedicalServices = () => {
 
 const services = [
     {
-        icon: "eye",
-        title: "eye care",
-        des: "text",
+        icon: <FaEye />,
+        title: "Eye Care",
+        des: "Comprehensive eye examinations and advanced treatments for various eye conditions.",
         path: "/"
     },
     {
-        icon: "checkup",
-        title: "medical checkup",
-        des: "text",
+        icon: <FaStethoscope />,
+        title: "Medical Checkup",
+        des: "Regular health checkups to monitor and maintain your overall well-being.",
         path: "/"
     },
     {
-        icon: "dental",
-        title: "dental care",
-        des: "text",
+        icon: <FaTooth />,
+        title: "Dental Care",
+        des: "High-quality dental services including cleanings, fillings, and preventive care.",
         path: "/"
     },
     {
-        icon: "lab service",
-        title: "laboratory service",
-        des: "text",
+        icon: <FaFlask />,
+        title: "Laboratory Service",
+        des: "Accurate and timely lab testing for various health conditions and diseases.",
         path: "/"
     },
     {
-        icon: "patient",
-        title: "patient centered",
-        des: "text",
+        icon: <FaMicroscope />,
+        title: "Patient Centered",
+        des: "Focused on providing personalized care tailored to each patient's unique needs.",
         path: "/"
-    },
+    }
 ]
 
     return (

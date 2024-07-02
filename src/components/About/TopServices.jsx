@@ -1,7 +1,6 @@
-import { FaMicroscope, FaRegHospital, FaUserMd } from "react-icons/fa";
+import { FaMicroscope, FaUserMd } from "react-icons/fa";
 import { MdAssignmentTurnedIn, MdMedicalServices } from "react-icons/md";
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import { Button } from "../ui/button";
 import PrimaryButton from "../Shared/PrimaryButton";
 
 const cards = [
