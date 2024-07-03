@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaEye, FaStethoscope, FaFlask, FaArrowRight } from "react-icons/fa6";
+import { FaEye, FaStethoscope, FaFlask } from "react-icons/fa6";
 import { FaMicroscope, FaTooth } from "react-icons/fa";
-import { MdArrowCircleRight } from "react-icons/md";
-import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { LuArrowRightCircle } from "react-icons/lu";
 
 const MedicalServices = () => {
