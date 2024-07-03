@@ -9,8 +9,8 @@ const AppointmentBox = () => {
         <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
           <RiFirstAidKitFill className="text-7xl text-primaryDark" />
           <div className=" space-y-3 text-center lg:text-left">
-            <h2 className="text-3xl font-bold">Open For Appointments</h2>
-            <p className="md:w-[500px]">
+            <h2 className="text-3xl lg:text-4xl font-bold">Open For Appointments</h2>
+            <p className="md:w-[500px] font-medium">
               We are delighted to announce that out doors are open, and we are
               now accepting appointments to serve you better.
             </p>
