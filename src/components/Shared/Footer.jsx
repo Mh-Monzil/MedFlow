@@ -9,11 +9,11 @@ import { RiMailSendFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <div className="bg-primaryDark">
-      <div className="max-w-7xl mx-auto py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* col-1  */}
-        <div className="mx-auto">
+        <div className="">
           <Logo />
-          <p className="pt-3 pb-5">
+          <p className="pt-3 pb-5 max-w-[400px]">
             Our family-centered approach to healthcare ensure that each member
             of your family receives personalized attention
           </p>
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
 
         {/* col-2  */}
-        <div className="mx-auto font-medium">
+        <div className="font-medium">
           <p className="text-xl font-bold pb-4">Quick Links</p>
           <div className="flex flex-col space-y-2">
             <Link to="/">Home</Link>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         {/* col-3  */}
-        <div className="mx-auto font-medium">
+        <div className=" font-medium">
           <p className="text-xl font-bold pb-4">Contact Details</p>
           <div className="space-y-2">
             <p className="flex items-center gap-2">
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* col-4  */}
-        <div className="mx-auto">
+        <div className="">
           <p className="text-xl font-bold pb-4">Subscribe To Our Newsletter</p>
           <p>
             Stay informed and never miss out on the latest news, health tips.
