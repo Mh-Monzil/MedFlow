@@ -44,8 +44,10 @@ const FAQ = () => {
           {
             questions.map((ques, idx) => {
                 return <AccordionItem value={`item-${ques?.itemCount}`} key={idx}>
-                <AccordionTrigger>{ques?.ques}</AccordionTrigger>
-                <AccordionContent>
+                <AccordionTrigger className="md:text-xl">
+                    {ques?.ques}
+                </AccordionTrigger>
+                <AccordionContent className="md:text-lg">
                     {ques?.ans}
                 </AccordionContent>
               </AccordionItem>
