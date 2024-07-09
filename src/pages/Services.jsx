@@ -13,13 +13,53 @@ const Services = () => {
       ],
     },
     {
-      title: "Cardiology Electrophysiology",
+      title: "Pathology Clinic",
       description:
-        "Expert consultations with board-certified cardiologists to assess heart health, discuss symptoms, and develop personalized treatment.",
+        "comprehensive tests to analyze body fluids, aiding in the diagnosis and monitoring of organ function and metabolic disorders.",
       services: [
-        "Cardiac Electrophysiology",
-        "Cardiac Catheterization",
-        "Arrhythmia Management",
+        "Molecular Pathology",
+        "Cytogenetics",
+        "Immunology",
+      ],
+    },
+    {
+      title: "Laboratory Analysis",
+      description:
+        "Our Laboratory Analysis Services offer a comprehensive range of advanced tests to aid in the accurate diagnosis and metabolic disorders.",
+      services: [
+        "Comprehensive Test Menu",
+        "Timely Turnaround",
+        "Advanced Diagnosis Tests",
+      ],
+    },
+    {
+      title: "Pediatric Clinic",
+      description:
+        "Comprehensive well-child checkups, growth monitoring, and developmental assessments to ensure your child's health track",
+      services: [
+        "Nutrition Counseling",
+        "Pediatric Dermatology",
+        "Developmental Evaluations",
+      ],
+    },
+    {
+      title: "Cardiac Clinic",
+      description:
+        "Find comprehensive care and support for heart failure patients, including lifestyle recommendations and advanced therapies.",
+      services: [
+        "Heart Failure Program",
+        "Cardiac Rehabilitation",
+        "Lipid Management",
+      ],
+    },
+    {
+      title: "Neurology Clinic",
+      description:
+        "consultations with specialized neurologists to address various neurological concerns, symptoms, and disorders.",
+      services: [
+        "Heart Failure Program",
+        "Cardiac Rehabilitation",
+        "Lipid Management",
       ],
     },
   ];
