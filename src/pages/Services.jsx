@@ -1,3 +1,4 @@
+import PrimaryButton from "@/components/Shared/PrimaryButton";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const Services = () => {
@@ -77,18 +78,19 @@ const Services = () => {
           return (
             <div
               key={idx}
-              className="max-w-96 mx-auto shadow-sm shadow-gray-300 hover:shadow-primaryTeal p-4 rounded-sm transition-all duration-300 ease-in-out"
+              className="max-w-96 mx-auto shadow-sm shadow-gray-300 hover:shadow-primaryTeal p-5 rounded-sm transition-all duration-300 ease-in-out"
             >
-              <h4 className="text-lg font-bold">{info.title}</h4>
+              <h4 className="text-xl font-bold">{info.title}</h4>
               <p className="text-gray-600 py-2.5">{info.description}</p>
-              <div className="space-y-2">
+              <div className="space-y-2 pb-6">
                 {info.services.map((service, idx) => (
                   <p key={idx} className="flex items-center gap-2">
                     <IoIosCheckmarkCircle className="text-primaryTeal text-xl" />
-                    <span>{service}</span>
+                    <span className="font-medium">{service}</span>
                   </p>
                 ))}
               </div>
+              <PrimaryButton title={"Read More..."}  />
             </div>
           );
         })}

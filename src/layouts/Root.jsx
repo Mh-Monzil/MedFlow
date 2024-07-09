@@ -5,8 +5,8 @@ import Footer from "../components/Shared/Footer";
 const Root = () => {
   return (
     <div className="font-roboto">
-      <div className="">
-        <Navbar />
+      <Navbar />
+      <div className="min-h-screen">
         <Outlet />
       </div>
       <Footer />
