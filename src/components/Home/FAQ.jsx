@@ -37,7 +37,7 @@ const FAQ = () => {
 
   return (
     <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-6 md:gap-10 px-4 md:px-6 my-12 md:my-28">
-      <div>
+      <div className="md:w-1/2">
         <p className="font-semibold text-primaryTeal ">FAQ&#39;s</p>
         <h3 className="text-3xl md:text-4xl font-bold py-2">Consultations With Qualified Doctors.</h3>
         <Accordion type="single" collapsible>
@@ -55,7 +55,7 @@ const FAQ = () => {
           }
         </Accordion>
       </div>
-      <div>
+      <div className="md:w-1/2">
         <img src={faqImg} alt="" className="rounded-md" />
       </div>
     </div>

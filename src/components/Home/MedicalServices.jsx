@@ -38,7 +38,7 @@ const MedicalServices = () => {
   ];
 
   return (
-    <div className=" bg-teal-200/30 mt-12 md:mt-28">
+    <div className="  mt-12 md:mt-28">
       <div className="max-w-7xl mx-auto px-4 md:px-6 pt-10 pb-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div>
           <p className="uppercase text-primaryTeal font-semibold">
