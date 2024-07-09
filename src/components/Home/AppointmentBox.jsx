@@ -4,7 +4,7 @@ import { MdOutlineEventAvailable } from "react-icons/md";
 
 const AppointmentBox = () => {
   return (
-    <div className="bg-primaryTeal/20 py-8">
+    <div className=" py-8">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row items-center justify-between gap-4">
         <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
           <RiFirstAidKitFill className="text-7xl text-primaryDark" />

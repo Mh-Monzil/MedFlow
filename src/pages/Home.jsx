@@ -14,7 +14,7 @@ const Home = () => {
             <BannerCard />
             <Welcome />
             <MedicalServices />
-            doctor slider
+            {/* doctor slider */}
             <AppointmentBox />
             <FAQ />
         </div>
