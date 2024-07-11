@@ -1,5 +1,6 @@
 import PrimaryButton from "@/components/Shared/PrimaryButton";
-import { IoIosCheckmarkCircle } from "react-icons/io";
+import { IoIosArrowForward, IoIosCheckmarkCircle } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const cardInfo = [
@@ -67,13 +68,23 @@ const Services = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-6">
-      <div className="text-center">
+      <div className="bg-primaryTeal/40 h-64 flex items-center justify-center">
+        <div className="text-center">
+          <h4 className="text-5xl font-medium">Our Services</h4>
+          <p className="flex items-center justify-center gap-2 mt-3 text-lg">
+            <Link to="/">Home </Link>
+            <IoIosArrowForward />
+            <span>Services</span>
+          </p>
+        </div>
+      </div>
+      <div className="text-center mt-12">
         <p className="font-semibold text-primaryTeal ">Our Services</p>
         <h3 className="text-3xl md:text-4xl font-bold py-2 capitalize max-w-[500px] mx-auto">
           providing medical care for the sickest in our community
         </h3>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {cardInfo.map((info, idx) => {
           return (
             <div
