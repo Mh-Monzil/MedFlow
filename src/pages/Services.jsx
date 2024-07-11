@@ -67,7 +67,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-6">
+    <div className=" ">
       <div className="bg-primaryTeal/40 h-64 flex items-center justify-center">
         <div className="text-center">
           <h4 className="text-5xl font-medium">Our Services</h4>
@@ -84,7 +84,7 @@ const Services = () => {
           providing medical care for the sickest in our community
         </h3>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {cardInfo.map((info, idx) => {
           return (
             <div
