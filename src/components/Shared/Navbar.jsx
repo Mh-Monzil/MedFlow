@@ -61,7 +61,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <PrimaryButton path={"/"} title={"Appointment"} />
+          <PrimaryButton path={"/appointment"} title={"Appointment"} />
         </div>
 
         <div className="flex md:hidden">
@@ -89,7 +89,7 @@ const Navbar = () => {
                 ))}
               </div>
               {/* appointment  */}
-              <PrimaryButton path={"/"} title={"Appointment"} />
+              <PrimaryButton path={"/appointment"} title={"Appointment"} />
             </SheetContent>
           </Sheet>
         </div>
