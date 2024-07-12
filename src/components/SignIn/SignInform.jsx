@@ -2,19 +2,35 @@ import { Label } from "@radix-ui/react-label";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from "@/hooks/useAuth";
 
 const SignInform = () => {
+    const {signInUser, googleSignIn} = useAuth()
+
+    const navigate = useNavigate()
+
 
     const handleForm = (event)=>{
         event.preventDefault()
         const form = event.target;
-        const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
 
-        console.log(name, email, password)
+        signInUser(email, password)
+        .then(result=> {
+            console.log("login successful");
+            navigate("/")
+        })
+        .catch(error=>{
+            console.log(error.message);
+        })
+       
     }
+
+    // const handleGoogleLogin = ()=>{
+    //     googleSignIn
+    // }
     return (
         <div>
 
@@ -35,7 +51,7 @@ const SignInform = () => {
         <div className="flex justify-center items-center flex-col my-5 gap-4">
             <p>Or  </p>
 
-            <Button  className="flex gap-4 w-full  items-center rounded-3xl" variant="outline">
+            <Button onClick={()=>googleSignIn()}  className="flex gap-4 w-full  items-center rounded-3xl" variant="outline">
             <FcGoogle />
             Sign in with Google
             </Button>
