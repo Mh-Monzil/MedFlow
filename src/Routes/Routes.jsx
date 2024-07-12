@@ -7,6 +7,7 @@ import Services from "@/pages/Services";
 import SignUp from "@/pages/SignUp";
 import SignIn from "@/pages/SignIn";
 // import Appointment from "@/pages/Appointment";
+import Appointment from "@/pages/Appointment";
 
 export const router = createBrowserRouter([
     {
@@ -38,6 +39,11 @@ export const router = createBrowserRouter([
           path: '/signin',
           element: <SignIn/>
         }
+        ,
+        {
+          path: "/appointment",
+          element: <Appointment />,
+        },
       ],
     },
   ]);
