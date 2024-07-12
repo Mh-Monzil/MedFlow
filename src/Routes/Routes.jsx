@@ -4,12 +4,9 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
-<<<<<<< HEAD
 import SignUp from "@/pages/SignUp";
 import SignIn from "@/pages/SignIn";
-=======
-import Appointment from "@/pages/Appointment";
->>>>>>> 814199d6082b6928c66404bbb5e48e0682e6a7be
+// import Appointment from "@/pages/Appointment";
 
 export const router = createBrowserRouter([
     {
@@ -28,12 +25,12 @@ export const router = createBrowserRouter([
           path: "/contact",
           element: <Contact />,
         },
+        
         {
           path: "/services",
           element: <Services />,
         },
         {
-<<<<<<< HEAD
           path: '/signup',
           element: <SignUp/>
         },
@@ -41,11 +38,6 @@ export const router = createBrowserRouter([
           path: '/signin',
           element: <SignIn/>
         }
-=======
-          path: "/appointment",
-          element: <Appointment />,
-        },
->>>>>>> 814199d6082b6928c66404bbb5e48e0682e6a7be
       ],
     },
   ]);
